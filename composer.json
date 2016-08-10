@@ -13,4 +13,9 @@
         }
     ],
     "minimum-stability": "stable"
+    "autoload": {
+    	"psr-4": {
+			"ZfSmsZilla\\": "src/ZfSmsZilla/"
+		}
+    }
 }
