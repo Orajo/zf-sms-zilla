@@ -9,7 +9,7 @@
             "email": "orajo@windowslive.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "orajo/sms-zilla": "dev-master"
     },
