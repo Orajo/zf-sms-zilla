@@ -1,12 +1,21 @@
 {
     "name": "orajo/zf-sms-zilla",
-    "description": "Zend Framework 2 module form sending SMS messages", 
+    "description": "Zend Framework 2 module for sending SMS messages", 
     "type": "library",
+    "keywords": [
+        "zend framework",
+        "zend framework 2",
+        "zf2",
+        "sms",
+        "module"
+    ],
+    "homepage": "https://github.com/Orajo/zf-sms-zilla",
     "license": "MIT",
     "authors": [
         {
             "name": "Jarosław Wasilewski",
-            "email": "orajo@windowslive.com"
+            "email": "orajo@windowslive.com",
+            "role": "Developer"
         }
     ],
     "require": {
