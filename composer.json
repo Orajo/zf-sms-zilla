@@ -15,7 +15,13 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
-            "ZfSmsZilla": "src/"
-        }
+            "ZfSmsZilla\\": "src/"
+        },
+        "psr-4": {
+            "ZfSmsZilla\\": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
