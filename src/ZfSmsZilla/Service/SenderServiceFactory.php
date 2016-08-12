@@ -1,8 +1,11 @@
 <?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * ZfSmsZilla
+ * Zend Framework 2 module for sending SMS through SmsZilla library.
+ * @link https://github.com/Orajo/zf-sms-zilla Homepage
+ * @link https://github.com/Orajo/sms-zilla SmsZilla homepage
+ * @copyright Copyright (c) 2016 Jarosław Wasilewski <orajo@windowslive.com>
+ * @license https://opensource.org/licenses/mit-license.php MIT License
  */
 
 namespace ZfSmsZilla\Service;
@@ -11,12 +14,19 @@ use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
 /**
- * Description of SenderServiceFactory
+ * SenderServiceFactory
  *
- * @author Jarek
+ * @author Jarosław Wasilewski <orajo@windowslive.com>
  */
 class SenderServiceFactory implements FactoryInterface {
     
+    /**
+     * Creates SenderService object.
+     * Additionally configure selected adapter based on configuration.
+     * 
+     * @param ServiceLocatorInterface $serviceLocator
+     * @return \ZfSmsZilla\Service\SenderService
+     */
     public function createService(ServiceLocatorInterface $serviceLocator) {
          
         $config = $serviceLocator->get('Config');

@@ -4,7 +4,7 @@ return array(
         'adapter' => 'SmsZilla\Adapter\FileAdapter',
         'params' => [
             'FileAdapter' => [
-                'store_path' => __DIR__ . '/../../../data/sms'
+                'store_path' => __DIR__ . '/../../data/sms'
             ],
             'MockAdapter' => [
             ],
@@ -16,7 +16,7 @@ return array(
                 'ssh_host' => '127.0.0.1',
                 'ssh_login' => 'dummy'
             ],
-            'SmsCenter' => [
+            'SmsCenterAdapter' => [
                 'login' => '',
                 'password' => '',
                 'sender' => ''

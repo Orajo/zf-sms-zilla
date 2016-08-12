@@ -9,9 +9,8 @@
             "email": "orajo@windowslive.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "orajo/sms-zilla": "dev-master"
+        "orajo/sms-zilla": "1.*"
     },
     "autoload": {
         "psr-4": {
