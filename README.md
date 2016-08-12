@@ -1,7 +1,5 @@
 # zf-sms-sender
-Zend Framework 2 module for sending SMS messages
-
-This module is based on https://github.com/Orajo/sms-zilla library. 
+Zend Framework 2 module for sending SMS messages. This module is based on https://github.com/Orajo/sms-zilla library. 
 
 ======
 
