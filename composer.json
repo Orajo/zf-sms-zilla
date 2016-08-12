@@ -2,9 +2,6 @@
     "name": "orajo/zf-sms-zilla",
     "description": "Zend Framework 2 module form sending SMS messages", 
     "type": "library",
-    "require": {
-        "orajo/sms-zilla": "1.*"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +10,9 @@
         }
     ],
     "minimum-stability": "stable",
+    "require": {
+        "orajo/sms-zilla": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "ZfSmsZilla\\": "src/"
