@@ -20,6 +20,18 @@ return array(
                 'login' => '',
                 'password' => '',
                 'sender' => ''
+            ],
+            'InfobipAdapter' => [
+				'sender' => 'InfoSMS',
+				'token' => '',
+            ],
+            'Clickatell' => [
+				'token' => '',
+            ],
+            'SerwerSms' => [
+                'login' => '',
+                'password' => '',
+                'sender' => null // ECO
             ]
         ],
     ],
