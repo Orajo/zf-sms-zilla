@@ -25,10 +25,10 @@ return array(
 				'sender' => 'InfoSMS',
 				'token' => '',
             ],
-            'Clickatell' => [
+            'ClickatellAdapter' => [
 				'token' => '',
             ],
-            'SerwerSms' => [
+            'SerwerSmsAdapter' => [
                 'login' => '',
                 'password' => '',
                 'sender' => null // ECO
