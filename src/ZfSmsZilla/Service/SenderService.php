@@ -11,16 +11,13 @@
 namespace ZfSmsZilla\Service;
 
 use SmsZilla\SmsSender;
-use Zend\ServiceManager\ServiceLocatorAwareInterface;
 
 /**
  * SenderService for easy sending SMS messages using SmsZilla library.
  *
  * @author Jarosław Wasilewski <orajo@windowslive.com>
  */
-class SenderService implements ServiceLocatorAwareInterface {
-
-    use \Zend\ServiceManager\ServiceLocatorAwareTrait;
+class SenderService {
 
     /**
      * @var \SmsSender\SmsSenderInterface

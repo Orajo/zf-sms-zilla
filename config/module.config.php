@@ -1,7 +1,7 @@
 <?php
-return array(
+return [
     'sms-zilla' => [
-        'adapter' => 'SmsZilla\Adapter\FileAdapter',
+        'adapter' => SmsZilla\Adapter\FileAdapter::class,
         'params' => [
             'FileAdapter' => [
                 'store_path' => __DIR__ . '/../../data/sms'
@@ -22,11 +22,11 @@ return array(
                 'sender' => ''
             ],
             'InfobipAdapter' => [
-				'sender' => 'InfoSMS',
-				'token' => '',
+                'sender' => 'InfoSMS',
+                'token' => '',
             ],
             'ClickatellAdapter' => [
-				'token' => '',
+                'token' => '',
             ],
             'SerwerSmsAdapter' => [
                 'login' => '',
@@ -37,7 +37,7 @@ return array(
     ],
     'service_manager' => [
         'factories' => [
-            'ZfSmsZillaService' => 'ZfSmsZilla\Service\SenderServiceFactory',
+            'ZfSmsZillaService' => ZfSmsZilla\Service\SenderServiceFactory::class,
         ],
     ],
-);
+];
