@@ -1,13 +1,9 @@
 {
     "name": "orajo/zf-sms-zilla",
-    "description": "Zend Framework 2 module for sending SMS messages", 
+    "description": "Laminas module for sending SMS messages",
     "type": "library",
     "keywords": [
-        "zend framework",
-        "zend framework 2",
-        "zend framework 3",
-        "zf2",
-        "zf3",
+        "laminas",
         "sms",
         "module",
         "SerwerSMS",
@@ -27,14 +23,13 @@
         }
     ],
     "require": {
-        "orajo/sms-zilla": "1.*"
+        "orajo/sms-zilla": "2.*",
+        "laminas/laminas-servicemanager": "3.*",
+        "laminas/laminas-dependency-plugin": "^2.1"
     },
     "autoload": {
         "psr-4": {
             "ZfSmsZilla\\": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+        }
     }
 }
