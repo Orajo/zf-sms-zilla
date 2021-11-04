@@ -22,7 +22,7 @@ class SenderService {
     /**
      * @var \SmsSender\SmsSenderInterface
      */
-    private $sender = null;
+    private $sender;
 
     public function __construct($adapter, $adapterParams = []) {
         $adapterObj = new $adapter($adapterParams);
@@ -49,5 +49,4 @@ class SenderService {
     public function getSender() {
         return $this->sender;
     }
-
 }
