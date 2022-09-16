@@ -24,3 +24,4 @@ data/DoctrineORMModule/cache/
 demos/
 extras/documentation
 /nbproject/private/
+/.idea/
