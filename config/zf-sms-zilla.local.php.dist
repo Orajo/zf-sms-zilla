@@ -1,7 +1,7 @@
 <?php
-return array(
+return [
     'sms-zilla' => [
-        'adapter' => 'SmsZilla\Adapter\FileAdapter',
+        'adapter' => SmsZilla\Adapter\FileAdapter::class,
         'params' => [
             'FileAdapter' => [
                 'store_path' => __DIR__ . '/../../data/sms'
@@ -16,23 +16,32 @@ return array(
                 'ssh_host' => '127.0.0.1',
                 'ssh_login' => 'dummy'
             ],
-			'SmsCenterAdapter' => [
+            'SmsCenterAdapter' => [
                 'login' => '',
                 'password' => '',
                 'sender' => ''
             ],
             'InfobipAdapter' => [
-				'sender' => 'InfoSMS',
-				'token' => '',
+                'sender' => 'InfoSMS',
+                'token' => '',
             ],
             'ClickatellAdapter' => [
-				'token' => '',
+                'token' => '',
             ],
             'SerwerSmsAdapter' => [
                 'login' => '',
                 'password' => '',
                 'sender' => null // ECO
+            ],
+            'SmsPlanet' => [
+                'token' => '',
+                'password' => '',
+                'sender' => ''
+            ],
+            'OrangeSmsOffnetNat' => [
+                'token' => '',
+                'sender' => '',
             ]
         ],
     ]
-);
+];
