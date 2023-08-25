@@ -32,6 +32,15 @@ return [
                 'login' => '',
                 'password' => '',
                 'sender' => null // ECO
+            ],
+            'SmsPlanet' => [
+                'token' => '',
+                'password' => '',
+                'sender' => ''
+            ],
+            'OrangeSmsOffnetNat' => [
+                'token' => '',
+                'sender' => '',
             ]
         ],
     ],

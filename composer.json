@@ -11,7 +11,9 @@
         "SMSApi",
         "SmsCenter",
         "Infobip",
-        "Cisco"
+        "Cisco",
+        "SmsPlanet",
+        "Orange"
     ],
     "homepage": "https://github.com/Orajo/zf-sms-zilla",
     "license": "MIT",
@@ -24,8 +26,7 @@
     ],
     "require": {
         "orajo/sms-zilla": "2.*",
-        "laminas/laminas-servicemanager": "3.*",
-        "laminas/laminas-dependency-plugin": "^2.1"
+        "laminas/laminas-servicemanager": "3.*"
     },
     "autoload": {
         "psr-4": {
