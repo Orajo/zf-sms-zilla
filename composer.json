@@ -13,7 +13,9 @@
         "Infobip",
         "Cisco",
         "SmsPlanet",
-        "Orange"
+        "Orange",
+        "HostedSMS",
+        "SzybkiSMS"
     ],
     "homepage": "https://github.com/Orajo/zf-sms-zilla",
     "license": "MIT",

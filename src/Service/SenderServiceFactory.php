@@ -4,7 +4,7 @@
  * Zend Framework 2 module for sending SMS through SmsZilla library.
  * @link https://github.com/Orajo/zf-sms-zilla Homepage
  * @link https://github.com/Orajo/sms-zilla SmsZilla homepage
- * @copyright Copyright (c) 2016 Jarosław Wasilewski <orajo@windowslive.com>
+ * @copyright Copyright (c) 2016-2025 Jarosław Wasilewski <orajo@windowslive.com>
  * @license https://opensource.org/licenses/mit-license.php MIT License
  */
 
@@ -23,7 +23,7 @@ class SenderServiceFactory implements FactoryInterface {
     /**
      * @inheritDoc
      */
-    public function __invoke(ContainerInterface $container, $requestedName, array $options = null) {
+    public function __invoke(ContainerInterface|\Psr\Container\ContainerInterface $container, $requestedName, array $options = null) {
         $config = $container->get('Config');
         // get Adapter class from $config['sms-zilla']['adapter']
 

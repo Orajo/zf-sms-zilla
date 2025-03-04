@@ -41,7 +41,16 @@ return [
             'OrangeSmsOffnetNat' => [
                 'token' => '',
                 'sender' => '',
-            ]
+            ],
+            'HostedSms' => [
+                'login' => '',
+                'password' => '',
+                'sender' => ''
+            ],
+            'SzybkiSms' => [
+                'token' => '',
+                'sender' => ''
+            ],
         ],
     ]
 ];

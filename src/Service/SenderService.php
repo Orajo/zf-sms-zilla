@@ -11,6 +11,7 @@
 namespace ZfSmsZilla\Service;
 
 use SmsZilla\SmsSender;
+use SmsZilla\SmsSenderInterface;
 
 /**
  * SenderService for easy sending SMS messages using SmsZilla library.
@@ -20,9 +21,9 @@ use SmsZilla\SmsSender;
 class SenderService {
 
     /**
-     * @var \SmsSender\SmsSenderInterface
+     * @var SmsSenderInterface
      */
-    private $sender;
+    private SmsSenderInterface $sender;
 
     public function __construct($adapter, $adapterParams = []) {
         $adapterObj = new $adapter($adapterParams);
@@ -32,11 +33,13 @@ class SenderService {
 
     /**
      * Send SMS message using adapter selected in config file.
+     *
      * @param string $message
-     * @param array|text $recipients
+     * @param array|string $recipients
      * @return bool sending status
      */
-    public function send($message, $recipients) {
+    public function send(string $message, string|array $recipients): bool
+    {
         $this->sender->setText($message);
         $this->sender->setRecipient($recipients);
         return $this->sender->send();
@@ -44,9 +47,10 @@ class SenderService {
 
     /**
      * Gets SmsSender object
-     * @return SmsZilla\SmsSender
+     * @return SmsSender
      */
-    public function getSender() {
+    public function getSender(): SmsSenderInterface
+    {
         return $this->sender;
     }
 }
