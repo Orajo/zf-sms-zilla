@@ -27,7 +27,7 @@
         }
     ],
     "require": {
-        "orajo/sms-zilla": "2.*",
+        "orajo/sms-zilla": "^2.6",
         "laminas/laminas-servicemanager": "3.*"
     },
     "autoload": {
