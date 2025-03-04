@@ -34,10 +34,5 @@
         "psr-4": {
             "ZfSmsZilla\\": "src/"
         }
-    },
-    "config": {
-        "allow-plugins": {
-            "laminas/laminas-dependency-plugin": true
-        }
     }
 }
